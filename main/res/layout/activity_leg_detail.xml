@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#304040"
+    tools:context=".LegDetail">
+
+    <ImageView
+        android:id="@+id/target_muscle_leg"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/leg_program"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/leg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="TARGET MUSCLE"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        />
+    <TextView
+        android:id="@+id/leg_desc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="The basic lower body movements squats, hip hinges (deadlifts), and lunges should comprise the majority of your programming. These movements inherently focus on the major muscle groups of the legs: the glutes, quads, hamstrings, and calves."
+        android:textColor="#9c9b98"
+        android:fontFamily="serif"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/leg_detail_workout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#5B7065"
+        android:text="See Exercise"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

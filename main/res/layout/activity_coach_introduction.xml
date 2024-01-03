@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#304040"
+    tools:context=".CoachIntroduction"
+    >
+
+    <ImageView
+        android:id="@+id/icon_id"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/babyboss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        />
+
+    <TextView
+        android:id="@+id/hello_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello buddy!"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        />
+
+    <TextView
+        android:id="@+id/coach_txt"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="I'm your personal coach. Are you ready for start your exercises?."
+        android:textSize="18dp"
+        android:textColor="#C9D1C8"
+        app:layout_constraintTop_toBottomOf="@+id/hello_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        />
+
+    <ImageView
+        android:id="@+id/coach"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/personal_coach"
+        app:layout_constraintLeft_toRightOf="@+id/coach_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        />
+
+    <TextView
+        android:id="@+id/begin_text"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Lets choose program you want, and we begin the exercise, are u ready?."
+        android:textSize="14dp"
+        android:textColor="#C9D1C8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        />
+
+    <Button
+        android:id="@+id/btn_ready"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#5B7065"
+        android:text="I'M READY"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

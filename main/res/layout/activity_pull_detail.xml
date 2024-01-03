@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#304040"
+    tools:context=".PushDetail">
+
+    <ImageView
+        android:id="@+id/target_muscle_pull"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/pull_program"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/pull_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="TARGET MUSCLE"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        />
+    <TextView
+        android:id="@+id/pull_desc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="This routine, which should be done as part of a push-pull or a push-pull-legs split, focuses on your pulling muscles, including the lats, traps, rear delts, lower back, biceps and forearms"
+        android:textColor="#9c9b98"
+        android:fontFamily="serif"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/pull_detail_workout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#5B7065"
+        android:text="See Exercise"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

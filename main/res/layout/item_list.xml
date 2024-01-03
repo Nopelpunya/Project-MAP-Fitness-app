@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="#5B7065"
+    app:cardCornerRadius="20dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageprogram"
+            android:layout_width="100dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/Judul_program"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JUDUL"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintLeft_toRightOf="@+id/imageprogram"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/keterangan_program"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="desc"
+            android:textSize="10dp"
+            android:textColor="#C9D1C8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Judul_program"
+            app:layout_constraintTop_toBottomOf="@+id/Judul_program"
+            app:layout_constraintVertical_bias="0.389" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
